@@ -5,3 +5,5 @@ export * from "./datasources/auth.datasource";
 export * from "./repositories/auth.repository";
 export * from "./use-cases/auth/register-user.use-case";
 export * from "./use-cases/auth/login-user.use-case";
+export * from "./datasources/account.datasource";
+export * from "./repositories/account.repository";

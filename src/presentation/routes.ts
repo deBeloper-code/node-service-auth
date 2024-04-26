@@ -1,5 +1,6 @@
 import { Router } from "express";
 import { AuthRoutes } from "./auth/AuthRoutes";
+import { AccountRoutes } from "./account/accountRoutes";
 
 export class AppRoutes {
   //Get
@@ -7,7 +8,7 @@ export class AppRoutes {
     const router = Router();
 
     router.use("/api/auth", AuthRoutes.routes);
-    // router.use("api/user/");
+    router.use("/api/user", AccountRoutes.routes);
     // router.use("api/products/");
     // router.use("api/orders/");
 
